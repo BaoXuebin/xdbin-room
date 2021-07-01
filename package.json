@@ -1,5 +1,5 @@
 {
-  "name": "xdbin-reading",
+  "name": "xdbin-room",
   "version": "1.0.0",
   "private": true,
   "proxy": "http://room.xdbin.com",

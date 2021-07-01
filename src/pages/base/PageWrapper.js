@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import ThemeToggle from '../../components/ThemeToggle';
-import ThemeContext from '../../context/ThemeContext';
-import LogoImage from '../../assets/logo.png'
 import Config from '../../config/Config';
-
+import ThemeContext from '../../context/ThemeContext';
 import './styles/PageWrapper.css';
 
 class PageWrapper extends Component {
@@ -18,7 +15,7 @@ class PageWrapper extends Component {
             <nav className="navbar">
               <div className="container">
                 <div className="navbar-header header-logo" to="/">
-                  <img src={LogoImage} width="16" height="16" />
+                  {/* <img src={LogoImage} width="16" height="16" /> */}
                   {Config.title}
                 </div>
                 <div className="menu navbar-right">

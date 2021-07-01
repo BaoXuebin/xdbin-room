@@ -31,11 +31,11 @@ jobs:
         run: |
           npm install
       
-      - name: Generate Page
+      - name: Build
         run: |
           npm run build:prod
           
-      - name: rsync deployments
+      - name: Deploy
         uses: burnett01/rsync-deployments@4.1
         with:
           # 这里是 rsync 的参数 switches: -avzh --delete --exclude="" --include="" --filter=""
