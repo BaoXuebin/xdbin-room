@@ -2,7 +2,7 @@
   "name": "xdbin-reading",
   "version": "1.0.0",
   "private": true,
-  "proxy": "http://localhost:8080",
+  "proxy": "http://room.xdbin.com",
   "dependencies": {
     "env-cmd": "^9.0.3",
     "isomorphic-fetch": "^3.0.0",

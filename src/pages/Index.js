@@ -1,10 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import io from 'socket.io-client';
-
-import Page from './base/Page';
 import ThemeContext from '../context/ThemeContext';
-
-import './styles/Index.css'
+import Page from './base/Page';
+import './styles/Index.css';
 
 class Index extends Component {
 
@@ -18,7 +16,7 @@ class Index extends Component {
   }
 
   componentDidMount() {
-    this.room = io.connect('http://localhost:3000/room')
+    this.room = io.connect(`https://room.xdbin.com/room`)
     this.room.on('join result', user => {
       this.setState({ user, joined: true })
       localStorage.setItem('user', JSON.stringify(user))
@@ -73,7 +71,7 @@ class Index extends Component {
     const { joined } = this.state;
     return (
       <div className="index-page">
-        <div>
+        {/* <div>
           <iframe
             frameborder="no"
             border="0"
@@ -81,9 +79,9 @@ class Index extends Component {
             marginheight="0"
             width={298}
             height={52}
-            src="//music.163.com/outchain/player?type=0&id=2175708108&auto=0&height=32"
+            src="//music.163.com/outchain/player?type=0&id=6837021688&auto=0&height=32"
           />
-        </div>
+        </div> */}
         {
           this.state.user ?
             <Fragment>
