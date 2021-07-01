@@ -73,6 +73,17 @@ class Index extends Component {
     const { joined } = this.state;
     return (
       <div className="index-page">
+        <div>
+          <iframe
+            frameborder="no"
+            border="0"
+            marginwidth="0"
+            marginheight="0"
+            width={298}
+            height={52}
+            src="//music.163.com/outchain/player?type=0&id=2175708108&auto=0&height=32"
+          />
+        </div>
         {
           this.state.user ?
             <Fragment>
@@ -96,7 +107,7 @@ class Index extends Component {
             this.state.users.map(u => <div key={u.id}><span className="font">{u.nickName}</span>&nbsp;正在&nbsp;<span className="font">{u.doing}</span></div>)
           }
         </div>
-      </div>
+      </div >
     );
   }
 }
