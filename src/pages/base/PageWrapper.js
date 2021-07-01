@@ -34,7 +34,7 @@ class PageWrapper extends Component {
           <footer className="footer">
             <div className="copyright">
               © 2021&nbsp;&nbsp;
-              <a href="https://github.com/BaoXuebin/xdbin-static-template">Github</a>&nbsp;|&nbsp;
+              <a href="https://github.com/BaoXuebin/xdbin-room">Github</a>&nbsp;|&nbsp;
               <a href="https://xdbin.com">主页</a>
             </div>
           </footer>
