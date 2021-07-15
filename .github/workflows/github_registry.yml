@@ -1,4 +1,4 @@
-name: CI to Docker Hub
+name: CI to GHCR
 
 # Controls when the action will run.
 on:
@@ -46,7 +46,7 @@ jobs:
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/xdbin-room:latest
+          tags: ghcr.io/baoxuebin/xdbin-room:latest
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
