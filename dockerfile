@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 FROM node:12 AS build
-WORKDIR /xdbin-room
+WORKDIR /app
 COPY package* yarn.lock ./
 RUN yarn install
 COPY public ./public
